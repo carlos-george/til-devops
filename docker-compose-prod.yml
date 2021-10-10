@@ -1,8 +1,8 @@
 version: "3"
 
 services:
-  tasks-db:
-    container_name: tasks-db
+  tasks-db-prod:
+    container_name: tasks-db-prod
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: "admin123"
@@ -11,6 +11,10 @@ services:
       - "3306:3306"
     networks:
       - tasks-net
+    volemes:
+      - tasks-volume: /var/lib/mysql
 
 networks:
   tasks-net:
+volemes:
+  tasks-volume:

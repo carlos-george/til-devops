@@ -3,10 +3,10 @@ package br.com.til.todotasks;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class TilTodoTasksApplicationTests {
 
-	@Test
+//	@Test
 	void contextLoads() {
 	}
 
